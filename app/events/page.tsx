@@ -75,9 +75,7 @@ export default function Page() {
           General Events
         </h2>
 
-        import FlipCard from "../components/FlipCard";
 
-        // inside your render
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
           {[
             {
