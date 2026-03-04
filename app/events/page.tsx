@@ -105,14 +105,14 @@ export default function Page() {
 
               {/* Flip Card Inner */}
               <div
-                className={`relative w-full h-full duration-700 transition-transform [transform-style:preserve-3d] ${
+                className={`relative w-full h-full duration-700 transition-transform transform-3d ${
                   activeCard === index ? "rotate-y-180" : ""
                 }`}
               >
 
                 {/* Front Side */}
                 <div
-                    className="absolute w-full h-full backface-hidden rounded-2xl shadow-xl flex flex-col justify-center items-center text-center bg-cover bg-center"
+                    className="absolute w-full h-full backface-hidden rounded-2xl shadow-xl flex flex-col justify-center items-center text-center bg-cover bg-center [backface-visibility:hidden] [-webkit-backface-visibility:hidden]"
                     style={{ backgroundImage: `url(${event.image})` }}
                 >
 
@@ -134,7 +134,7 @@ export default function Page() {
                 </div>
 
                 {/* Back Side */}
-                <div className="absolute w-full h-full backface-hidden rotate-y-180 bg-orange-600 text-white rounded-2xl shadow-xl p-6 flex flex-col justify-center text-center">
+                <div className="absolute w-full h-full backface-hidden rotate-y-180 bg-orange-600 text-white rounded-2xl shadow-xl p-6 flex flex-col justify-center text-center [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
 
                   <h3 className="text-xl font-bold mb-4">
                     {event.title}

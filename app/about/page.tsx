@@ -86,7 +86,7 @@ export default function Page() {
               }`}
             >
               <img
-                src="/deity.jpg"
+                src="/deity1.JPG"
                 alt="Sri Kalpaga Vinayagar"
                 className="w-full h-74 md:h-156 object-cover rounded-3xl"
               />
