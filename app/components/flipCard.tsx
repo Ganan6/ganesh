@@ -11,49 +11,45 @@ interface FlipCardProps {
 const FlipCard: React.FC<FlipCardProps> = ({ title, image, description }) => {
   const [flipped, setFlipped] = useState(false);
 
-  const toggleFlip = () => setFlipped(!flipped);
-
   return (
     <div
       className="relative w-full h-72 cursor-pointer"
-      style={{ perspective: 1200 }} // 3D depth
-      onClick={toggleFlip}
+      style={{ perspective: 1200 }}
+      onClick={() => setFlipped(!flipped)}
     >
-      {/* Inner container */}
       <div
         className="relative w-full h-full duration-700 transition-transform"
         style={{
           transformStyle: "preserve-3d",
-          WebkitTransformStyle: "preserve-3d", // Safari
+          WebkitTransformStyle: "preserve-3d",
           transform: flipped ? "rotateY(180deg)" : "rotateY(0deg)",
-          WebkitTransform: flipped ? "rotateY(180deg)" : "rotateY(0deg)", // Safari
+          WebkitTransform: flipped ? "rotateY(180deg)" : "rotateY(0deg)",
           willChange: "transform",
         }}
       >
-        {/* Front side */}
+        {/* Front */}
         <div
           className="absolute w-full h-full rounded-2xl shadow-xl flex flex-col justify-center items-center text-center bg-cover bg-center"
           style={{
             backgroundImage: `url(${image})`,
             backfaceVisibility: "hidden",
             WebkitBackfaceVisibility: "hidden",
+            // combine dark overlay into background
+            backgroundColor: "rgba(0,0,0,0.5)",
           }}
         >
-          <div className="absolute inset-0 bg-black/50 rounded-2xl"></div>
-          <div className="relative z-10 px-6">
-            <h3 className="text-xl font-bold text-white mb-4">{title}</h3>
-            <button className="bg-amber-300 px-4 py-2 rounded-xl text-sm text-black font-semibold hover:bg-amber-400 transition">
-              Click to view details
-            </button>
-          </div>
+          <h3 className="text-xl font-bold text-white mb-4">{title}</h3>
+          <button className="bg-amber-300 px-4 py-2 rounded-xl text-sm text-black font-semibold hover:bg-amber-400 transition">
+            Click to view details
+          </button>
         </div>
 
-        {/* Back side */}
+        {/* Back */}
         <div
           className="absolute w-full h-full rounded-2xl shadow-xl p-6 flex flex-col justify-center text-center bg-orange-600 text-white"
           style={{
             transform: "rotateY(180deg)",
-            WebkitTransform: "rotateY(180deg)", // Safari
+            WebkitTransform: "rotateY(180deg)",
             backfaceVisibility: "hidden",
             WebkitBackfaceVisibility: "hidden",
           }}
