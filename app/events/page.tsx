@@ -107,7 +107,9 @@ export default function Page() {
                 className="relative w-full h-full duration-700 transition-transform"
                 style={{
                   transformStyle: "preserve-3d",
+                  WebkitTransformStyle: "preserve-3d",
                   transform: activeCard === index ? "rotateY(180deg)" : "rotateY(0deg)",
+                  willChange: "transform",
                 }}
               >
                 {/* Front */}
@@ -133,6 +135,7 @@ export default function Page() {
                   className="absolute w-full h-full rounded-2xl shadow-xl p-6 flex flex-col justify-center text-center bg-orange-600 text-white"
                   style={{
                     transform: "rotateY(180deg)",
+                    WebkitTransform: "rotateY(180deg)",
                     backfaceVisibility: "hidden",
                     WebkitBackfaceVisibility: "hidden",
                   }}
