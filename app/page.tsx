@@ -13,8 +13,6 @@ export default function Page() {
     <div className="min-h-screen">
 
       {/* Header */}
-      <title>SKHCA | Home</title>
-
       <header className="bg-gray-300 text-black py-1 px-6">
 
         <div className="flex items-center w-full">

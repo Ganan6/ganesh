@@ -40,10 +40,6 @@ export default function Page() {
 
   return (
     <div className="min-h-screen flex flex-col">
-
-      {/* Header */}
-      <title>SKHCA | About</title>
-  
       {/* Nav Section */}
       <section className="flex flex-col p-4 md:p-6 text-white rounded-lg mx-4 my-2 shadow-lg">
         <div className="flex items-top justify-between mb-2 md:pr-12 pr-4">
