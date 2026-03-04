@@ -99,53 +99,47 @@ export default function Page() {
 
             <div
               key={index}
-              className="relative h-72 cursor-pointer perspective"
+              className="relative h-72 cursor-pointer"
+              style={{ perspective: 1000 }}
               onClick={() => toggleCard(index)}
             >
-
-              {/* Flip Card Inner */}
               <div
-                className={`relative w-full h-full duration-700 transition-transform transform-3d ${
-                  activeCard === index ? "rotate-y-180" : ""
-                }`}
+                className="relative w-full h-full duration-700 transition-transform"
+                style={{
+                  transformStyle: "preserve-3d",
+                  transform: activeCard === index ? "rotateY(180deg)" : "rotateY(0deg)",
+                }}
               >
-
-                {/* Front Side */}
+                {/* Front */}
                 <div
-                    className="absolute w-full h-full backface-hidden rounded-2xl shadow-xl flex flex-col justify-center items-center text-center bg-cover bg-center [backface-visibility:hidden] [-webkit-backface-visibility:hidden]"
-                    style={{ backgroundImage: `url(${event.image})` }}
+                  className="absolute w-full h-full rounded-2xl shadow-xl flex flex-col justify-center items-center text-center bg-cover bg-center"
+                  style={{
+                    backgroundImage: `url(${event.image})`,
+                    backfaceVisibility: "hidden",
+                    WebkitBackfaceVisibility: "hidden",
+                  }}
                 >
-
-                  {/* Dark Overlay */}
                   <div className="absolute inset-0 bg-black/50 rounded-2xl"></div>
-
-                  {/* Content */}
                   <div className="relative z-10 px-6">
-
-                    <h3 className="text-xl font-bold text-white mb-4">
-                      {event.title}
-                    </h3>
-
+                    <h3 className="text-xl font-bold text-white mb-4">{event.title}</h3>
                     <button className="bg-amber-300 px-4 py-2 rounded-xl text-sm text-black font-semibold hover:bg-amber-400 transition">
                       Click to view details
                     </button>
-
                   </div>
                 </div>
 
-                {/* Back Side */}
-                <div className="absolute w-full h-full backface-hidden rotate-y-180 bg-orange-600 text-white rounded-2xl shadow-xl p-6 flex flex-col justify-center text-center [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
-
-                  <h3 className="text-xl font-bold mb-4">
-                    {event.title}
-                  </h3>
-
-                  <p className="text-sm leading-relaxed">
-                    {event.description}
-                  </p>
-
+                {/* Back */}
+                <div
+                  className="absolute w-full h-full rounded-2xl shadow-xl p-6 flex flex-col justify-center text-center bg-orange-600 text-white"
+                  style={{
+                    transform: "rotateY(180deg)",
+                    backfaceVisibility: "hidden",
+                    WebkitBackfaceVisibility: "hidden",
+                  }}
+                >
+                  <h3 className="text-xl font-bold mb-4">{event.title}</h3>
+                  <p className="text-sm leading-relaxed">{event.description}</p>
                 </div>
-
               </div>
             </div>
 
