@@ -6,6 +6,7 @@ import Nav from "../components/nav";
 import Events from "../components/events";
 import Calendar from "../components/calendar";
 import events from "../components/events";
+import FlipCard from "../components/flipCard";
 
 export default function Page() {
 
@@ -74,82 +75,36 @@ export default function Page() {
           General Events
         </h2>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+        import FlipCard from "../components/FlipCard";
 
+        // inside your render
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
           {[
             {
               title: "Panguni Uththaram",
               image: "/events/panguni.png",
-              description:
-                "Panguni Uththaram is an auspicious Tamil festival celebrated during the Tamil month of Panguni. It is associated with divine marriages, especially Lord Murugan and Deivanai, and symbolises sacred union and harmony. Devotees perform special abishegam, kavadi, and marriage-related prayers for family well-being and blessings."
+              description: "Panguni Uththaram is an auspicious Tamil festival celebrated during the Tamil month of Panguni. It is associated with divine marriages, especially Lord Murugan and Deivanai, and symbolises sacred union and harmony. Devotees perform special abishegam, kavadi, and marriage-related prayers for family well-being and blessings."
             },
             {
               title: "Vinayagar Chaturthi",
               image: "/events/chaturthi.png",
-              description:
-                "Vinayaga Chathurthi celebrates the birth of Lord Ganesha, the remover of obstacles and the giver of wisdom and prosperity. Devotees install Ganesha idols, perform special poojas, offer modakam (His favourite sweet), and seek blessings for success and protection in life."
+              description: "Vinayaga Chathurthi celebrates the birth of Lord Ganesha, the remover of obstacles and the giver of wisdom and prosperity. Devotees install Ganesha idols, perform special poojas, offer modakam (His favourite sweet), and seek blessings for success and protection in life."
             },
             {
               title: "Navaratri Festival",
               image: "/events/navaratri.png",
-              description:
-                "Navaratri means “Nine Nights” and is a sacred Hindu festival dedicated to Goddess Durga and her divine forms. It celebrates the victory of good over evil and the power of divine feminine energy. Devotees observe prayers, fasting, music, dance (such as Garba and Kolu), and special poojas during these nine nights."
+              description: "Navaratri means “Nine Nights” and is a sacred Hindu festival dedicated to Goddess Durga and her divine forms. It celebrates the victory of good over evil and the power of divine feminine energy. Devotees observe prayers, fasting, music, dance (such as Garba and Kolu), and special poojas during these nine nights."
             }
           ].map((event, index) => (
-            <div
+            <FlipCard
               key={index}
-              className="relative w-full h-72 cursor-pointer"
-              style={{ perspective: 1200 }} // 3D depth
-              onClick={() => toggleCard(index)}
-            >
-              {/* Card Inner */}
-              <div
-                className="relative w-full h-full duration-700 transition-transform"
-                style={{
-                  transformStyle: "preserve-3d",
-                  WebkitTransformStyle: "preserve-3d", // Safari fix
-                  transform: activeCard === index ? "rotateY(180deg)" : "rotateY(0deg)",
-                  WebkitTransform: activeCard === index ? "rotateY(180deg)" : "rotateY(0deg)", // Safari fix
-                  willChange: "transform", // improves performance
-                }}
-              >
-                {/* Front Side */}
-                <div
-                  className="absolute w-full h-full rounded-2xl shadow-xl flex flex-col justify-center items-center text-center bg-cover bg-center"
-                  style={{
-                    backgroundImage: `url(${event.image})`,
-                    backfaceVisibility: "hidden",
-                    WebkitBackfaceVisibility: "hidden", // Safari fix
-                  }}
-                >
-                  {/* Dark overlay */}
-                  <div className="absolute inset-0 bg-black/50 rounded-2xl"></div>
-                  {/* Content */}
-                  <div className="relative z-10 px-6">
-                    <h3 className="text-xl font-bold text-white mb-4">{event.title}</h3>
-                    <button className="bg-amber-300 px-4 py-2 rounded-xl text-sm text-black font-semibold hover:bg-amber-400 transition">
-                      Click to view details
-                    </button>
-                  </div>
-                </div>
-
-                {/* Back Side */}
-                <div
-                  className="absolute w-full h-full rounded-2xl shadow-xl p-6 flex flex-col justify-center text-center bg-orange-600 text-white"
-                  style={{
-                    transform: "rotateY(180deg)",
-                    WebkitTransform: "rotateY(180deg)", // Safari fix
-                    backfaceVisibility: "hidden",
-                    WebkitBackfaceVisibility: "hidden", // Safari fix
-                  }}
-                >
-                  <h3 className="text-xl font-bold mb-4">{event.title}</h3>
-                  <p className="text-sm leading-relaxed">{event.description}</p>
-                </div>
-              </div>
-            </div>
+              title={event.title}
+              image={event.image}
+              description={event.description}
+            />
           ))}
         </div>
+        
       </section>
 
       <Footer />
