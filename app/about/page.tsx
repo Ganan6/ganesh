@@ -128,7 +128,6 @@ export default function Page() {
 
       {/* Location Section */}
       <section className="py-16 px-6 md:px-20 bg-linear-to-b from-white to-orange-50 m-4 rounded-lg">
-
         <div className="max-w-6xl mx-auto text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold text-orange-600 mb-4">
             Visit Our Temple
@@ -169,7 +168,10 @@ export default function Page() {
             Open in Google Maps
           </a>
         </div>
-
+        <div className="grid md:grid-cols-2 rounded-lg mt-6 md:gap-4">
+          <img src="/train.jpg" alt="Train" className="w-full h-auto object-contain" />
+          <img src="/bus.jpg" alt="Bus" className="w-full h-auto object-contain" />
+        </div>
       </section>
 
 
