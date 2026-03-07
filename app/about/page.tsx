@@ -39,7 +39,7 @@ export default function Page() {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-black">
       {/* Nav Section */}
       <section className="flex flex-col p-4 md:p-6 text-white rounded-lg mx-4 my-2 shadow-lg">
         <div className="flex items-top justify-between mb-2 md:pr-12 pr-4">
@@ -173,7 +173,6 @@ export default function Page() {
           <img src="/bus.jpg" alt="Bus" className="w-full h-auto object-contain" />
         </div>
       </section>
-
 
       {/* Footer */}
       <Footer />
