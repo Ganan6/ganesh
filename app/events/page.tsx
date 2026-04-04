@@ -71,7 +71,7 @@ export default function Page() {
       
       {/* General Events Section */}
       <section className="py-6 px-6 md:px-20 bg-gray-50">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-orange-600 mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-orange-600 mb-6">
           General Events
         </h2>
 
@@ -81,17 +81,32 @@ export default function Page() {
             {
               title: "Panguni Uththaram",
               image: "/events/panguni.png",
-              description: "Panguni Uththaram is an auspicious Tamil festival celebrated during the Tamil month of Panguni. It is associated with divine marriages, especially Lord Murugan and Deivanai, and symbolises sacred union and harmony. Devotees perform special abishegam, kavadi, and marriage-related prayers for family well-being and blessings."
+              description: "Panguni Uththaram is an auspicious Tamil festival celebrated during the Tamil month of Panguni. It is associated with divine marriages and symbolises sacred union and harmony. Devotees perform special abishegam, kavadi, and marriage-related prayers for family well-being and blessings."
             },
             {
               title: "Vinayagar Chaturthi",
               image: "/events/chaturthi.png",
-              description: "Vinayaga Chathurthi celebrates the birth of Lord Ganesha, the remover of obstacles and the giver of wisdom and prosperity. Devotees install Ganesha idols, perform special poojas, offer modakam (His favourite sweet), and seek blessings for success and protection in life."
+              description: "Vinayaga Chathurthi celebrates the birth of Lord Ganesha, the remover of obstacles and the giver of wisdom and prosperity. We perform special poojas, offer modakam (His favourite sweet), and seek blessings for success and protection in life."
             },
             {
               title: "Navaratri Festival",
               image: "/events/navaratri.png",
-              description: "Navaratri means “Nine Nights” and is a sacred Hindu festival dedicated to Goddess Durga and her divine forms. It celebrates the victory of good over evil and the power of divine feminine energy. Devotees observe prayers, fasting, music, dance (such as Garba and Kolu), and special poojas during these nine nights."
+              description: "Navaratri means “Nine Nights” and is a sacred Hindu festival dedicated to Goddess Durga and her divine forms. It celebrates the victory of good over evil and the power of divine feminine energy. Devotees can participate in prayers, fasting, bajan, dance and special poojas during these nine nights."
+            },
+            {
+              title: "Maha Shivratri",
+              image: "/events/shivratri.png",
+              description: "A sacred Hindu festival dedicated to Lord Shiva, observed with night-long prayers, fasting, and meditation. Devotees seek spiritual growth, inner peace, and blessings by chanting and offering prayers throughout the night."
+            },
+            {
+              title: "Tamil New Year",
+              image: "/events/puthandu.png",
+              description: "Celebrated as Puthandu, it marks the Tamil New Year and the beginning of a new calendar cycle. Families offer prayers, prepare festive meals, and welcome prosperity, happiness, and new beginnings."
+            },
+            {
+              title: "Diwali",
+              image: "/events/diwali.png",
+              description: "The festival of lights, symbolising the victory of light over darkness and good over evil. Celebrated with lamps, prayers, sweets, and fireworks, it brings joy, prosperity, and togetherness among families and communities."
             }
           ].map((event, index) => (
             <FlipCard

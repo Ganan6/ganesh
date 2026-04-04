@@ -17,7 +17,7 @@ export default function Page() {
 
         <div className="flex items-center w-full">
           <i className="fas fa-location-dot text-yellow-800 mr-2"></i>
-          <a href="https://maps.app.goo.gl/1EQvfTPhtXeBAQFw8" target="_blank" className="text-sm md:text-lg font-bold hover:text-blue-400 transition delay-150 ease-in-out">Pandy Road, Aberkenfig, Bridgend</a>
+          <a href="https://maps.app.goo.gl/1EQvfTPhtXeBAQFw8" target="_blank" className="text-sm md:text-lg font-bold hover:text-blue-400 transition delay-150 ease-in-out">Pandy Road, Aberkenfig, Bridgend.</a>
           <a href="https://www.facebook.com/profile.php?id=100069003124125" target="_blank" className="btn text-sm md:text-lg ml-auto bg-blue-400 p-2 rounded-lg hover:bg-yellow-500 transition ease-in-out"><i className="fab fa-facebook-f text-white text-sm md:text-lg"></i></a>
         </div>
       </header>
@@ -31,6 +31,7 @@ export default function Page() {
         <div className="flex flex-col items-center justify-center flex-1 text-center p-4 md:p-16">
           <h1 className="text-4xl font-bold mb-4 bg-black/60 p-2 rounded-xl opacity-0 animate-[fadeInUp_1s_ease-out_forwards]"><i className="fa fa-quote-right fa-flip-horizontal"></i>Harmony, Devotion, Divinity<i className="fa fa-quote-right"></i></h1>
           <p className="text-xl mb-6 bg-black/60 p-2 rounded-xl font-semibold opacity-0 animate-[fadeInUp_1s_ease-out_0.5s_forwards]">May his divine wisdom lead you on the path to success.</p>
+          <p className="text-xl mb-6 bg-black/60 p-2 rounded-xl opacity-0 animate-[fadeInUp_1s_ease-out_0.5s_forwards]">Opening time: 6pm - 8pm daily.<br />Hours might differ during special days. Check events page or Call us.</p>
         </div>
       </section>
 

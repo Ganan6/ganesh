@@ -38,7 +38,7 @@ const FlipCard: React.FC<FlipCardProps> = ({ title, image, description }) => {
             backgroundColor: "rgba(0,0,0,0.5)",
           }}
         >
-          <h3 className="text-xl font-bold text-white mb-4">{title}</h3>
+          <h3 className="text-xl font-bold text-white mb-4 bg-gray-400/80 p-2 rounded-xl">{title}</h3>
           <button className="bg-amber-300 px-4 py-2 rounded-xl text-sm text-black font-semibold hover:bg-amber-400 transition">
             Click to view details
           </button>
