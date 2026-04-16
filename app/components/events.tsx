@@ -21,6 +21,11 @@ export default function Events() {
           title: "Chithra Paurnami & Satyanaraya Pooja",
           date: "1st May 2026",
           image: "/events/uce4.png"
+        },
+        {
+          title: "Yantra Pooja",
+          date: "17th April 2026",
+          image: "/events/uce5.png"
         }
         
     ];

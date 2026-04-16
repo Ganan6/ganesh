@@ -32,6 +32,10 @@ const events: EventType[] = [
     date: "2026-05-01",
     title: "Satyanaraya Pooja",
   },
+  {
+    date: "2026-04-17",
+    title: "Yantra Pooja Begins",
+  },
 ];
 
 export default function Calendar() {
