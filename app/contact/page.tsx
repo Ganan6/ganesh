@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Footer from "../components/footer";
 import Nav from "../components/nav";
+import ContactForm from "../components/form";
 
 export default function Page() {
   const [count, setCount] = useState(0);
@@ -24,7 +25,7 @@ export default function Page() {
             </div>
         </section>
 
-        <section className="py-16 px-6 md:px-20 bg-gradient-to-b from-white to-orange-50 m-4 rounded-2xl shadow-lg">
+        <section className="py-16 px-6 md:px-20 bg-linear-to-b from-white to-orange-50 m-4 rounded-2xl shadow-lg">
 
             {/* Heading */}
             <div className="text-center mb-12">
@@ -109,7 +110,8 @@ export default function Page() {
                 Open in Google Maps
                 </a>
             </div>
-            </section>
+            <ContactForm />
+        </section>
 
       {/* Footer */}
       <Footer />
