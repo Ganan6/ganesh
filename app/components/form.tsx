@@ -6,12 +6,12 @@ export default function ContactForm() {
   const [result, setResult] = useState("");
   const [loading, setLoading] = useState(false);
 
-  const onSubmit = async (event) => {
+  const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setLoading(true);
     setResult("");
 
-    const formData = new FormData(event.target);
+    const formData = new FormData(event.currentTarget);
     const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_KEY;
 
     if (!accessKey) {
@@ -32,7 +32,7 @@ export default function ContactForm() {
 
       if (data.success) {
         setResult("✅ Message sent successfully!");
-        event.target.reset();
+        (event.currentTarget as HTMLFormElement).reset();
       } else {
         setResult("❌ Something went wrong. Please try again.");
       }
