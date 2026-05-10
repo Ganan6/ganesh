@@ -3,28 +3,28 @@ import React from "react";
 export default function Events() {
     const events = [
         {
-          title: "Ugadi",
-          date: "19th March 2026",
+          title: "Yantra Pooja",
+          date: "19th March - 31st May 2026",
           image: "/events/uce1.png"
         },
         {
-          title: "Panguni Uththaram",
-          date: "1st April 2026",
+          title: "Maha Kumbabishekam",
+          date: "1st - 7th June 2026",
           image: "/events/uce2.png"
         },
         {
-          title: "Tamil New Year",
-          date: "14th April 2026",
+          title: "Special Homams",
+          date: "1st - 6th June 2026",
           image: "/events/uce3.png"
         },
         {
-          title: "Chithra Paurnami & Satyanaraya Pooja",
-          date: "1st May 2026",
+          title: "Deepa Pooja",
+          date: "3rd June 2026",
           image: "/events/uce4.png"
         },
         {
-          title: "Yantra Pooja",
-          date: "17th April 2026",
+          title: "Oil Annointing",
+          date: "4th, 5th & 6th April 2026",
           image: "/events/uce5.png"
         }
         

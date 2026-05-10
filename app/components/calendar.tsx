@@ -9,28 +9,32 @@ type EventType = {
 
 const events: EventType[] = [
   {
-    date: "2026-03-19",
-    title: "Ugadi",
+    date: "2026-06-01",
+    title: "Ganapathi Homam",
   },
   {
-    date: "2026-03-26",
-    title: "Rama Navami",
+    date: "2026-06-03",
+    title: "Deepa Pooja",
   },
   {
-    date: "2026-04-01",
-    title: "Panguni Uththaram",
+    date: "2026-06-04",
+    title: "Navagraha Homam & Oil Annointing",
   },
   {
-    date: "2026-04-14",
-    title: "Tamil New Year",
+    date: "2026-06-05",
+    title: "Thravya Homam & Oil Annointing",
   },
   {
-    date: "2026-05-01",
-    title: "Chithra Pournami",
+    date: "2026-06-06",
+    title: "Thravya Homam & Oil Annointing",
   },
   {
-    date: "2026-05-01",
-    title: "Satyanaraya Pooja",
+    date: "2026-06-07",
+    title: "Maha Kumbabishekam",
+  },
+  {
+    date: "2026-05-31",
+    title: "Last day of Yantra Pooja",
   },
   {
     date: "2026-04-17",
