@@ -40,6 +40,58 @@ const events: EventType[] = [
     date: "2026-04-17",
     title: "Yantra Pooja Begins",
   },
+  {
+    date: "2026-07-23",
+    title: "Shanthi - Day before Grand Festival",
+  },
+  {
+    date: "2026-07-24",
+    title: "Flag Hoisting",
+  },
+  {
+    date: "2026-07-25",
+    title: "Dheepa Pooja \n Lakshmi Ganapathy",
+  },
+  {
+    date: "2026-07-26",
+    title: "Shiva Pooja Ganapathy",
+  },
+  {
+    date: "2026-07-27",
+    title: "Mayuresha Ganapathy",
+  },
+  {
+    date: "2026-07-28",
+    title: "Bhakthamukthi Ganapathy",
+  },
+  {
+    date: "2026-07-29",
+    title: "Vasantha Utsavam",
+  },
+  {
+    date: "2026-07-30",
+    title: "Vettai Thiruvizha",
+  },
+  {
+    date: "2026-07-31",
+    title: "Sappara Thiruvizha",
+  },
+  {
+    date: "2026-08-01",
+    title: "Chariot Festival",
+  },
+  {
+    date: "2026-08-02",
+    title: "Theertha Utsavam",
+  },
+  {
+    date: "2026-08-03",
+    title: "Thirukalyanam \n Holy Wedding",
+  },
+  {
+    date: "2026-08-04",
+    title: "Bhairavar Festival",
+  },
 ];
 
 export default function Calendar() {
@@ -132,7 +184,7 @@ export default function Calendar() {
           {selectedEvents.length > 0 ? (
             selectedEvents.map((event, i) => (
               <div key={i} className="mb-3">
-                <h2 className="font-semibold text-blue-600 text-2xl">
+                <h2 className="font-semibold text-blue-600 text-2xl whitespace-pre-line">
                   {event.title}
                 </h2>
               </div>
