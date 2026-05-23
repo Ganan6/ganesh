@@ -84,6 +84,50 @@ export default function Page() {
         </div>
       </section>
 
+      {/* Maha Kumbabishekam Section */}
+      <section className="bg-linear-to-br from-orange-100 via-yellow-50 to-orange-200 text-black py-12 px-6 md:px-16 m-4 rounded-lg shadow-lg overflow-hidden">
+        <div className="max-w-6xl mx-auto text-center">
+
+          {/* Tamil Heading */}
+          <h2
+            className="text-3xl md:text-5xl font-bold mb-4 text-orange-800 opacity-0 animate-[fadeInUp_1s_ease-out_forwards]"
+            style={{ fontFamily: "'Noto Serif Tamil', serif" }}
+          >
+            மகா கும்பாபிஷேகம் - 2026
+          </h2>
+
+          {/* English Heading */}
+          <h3 className="text-2xl md:text-4xl font-semibold mb-8 text-gray-800 opacity-0 animate-[fadeInUp_1s_ease-out_0.25s_forwards]">
+            Maha Kumbabishekam - 2026
+          </h3>
+
+          {/* Main Image */}
+          <div className="mb-8 overflow-hidden rounded-2xl shadow-2xl group">
+            <img
+              src="/kumbabi.JPG"
+              alt="Maha Kumbabishekam 2026"
+              className="w-full object-cover rounded-2xl transition-transform duration-500 scale-105 md:scale-100 group-hover:scale-105"
+            />
+          </div>
+
+          {/* Description */}
+          <p className="text-lg md:text-xl max-w-4xl mx-auto leading-relaxed mb-8 text-gray-700 opacity-0 animate-[fadeInUp_1s_ease-out_0.5s_forwards]">
+            Join us in the divine celebration of <span className="font-semibold text-orange-700">Maha Kumbabishekam 2026</span>,
+            a sacred spiritual milestone filled with prayers, traditions, cultural unity,
+            and blessings for the entire community.
+          </p>
+
+          {/* Download Button */}
+          <a
+            href="/full_notice.pdf"
+            target="_blank"
+            className="inline-block bg-orange-600 hover:bg-orange-500 text-white font-semibold px-8 py-3 rounded-lg text-lg shadow-lg transition duration-300 hover:scale-105"
+          >
+            Download Full Notice
+          </a>
+        </div>
+      </section>
+
       <div className="bg-gray-300 mb-4 rounded-lg pb-6">
         <Events />
         <a href="/events">
