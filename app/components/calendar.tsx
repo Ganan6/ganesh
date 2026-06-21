@@ -41,6 +41,14 @@ const events: EventType[] = [
     title: "Yantra Pooja Begins",
   },
   {
+    date: "2026-06-22",
+    title: "Aani Uththaram",
+  },
+  {
+    date: "2026-06-29",
+    title: "Sathya Narayana Pooja",
+  },
+  {
     date: "2026-07-23",
     title: "Shanthi - Day before Grand Festival",
   },
