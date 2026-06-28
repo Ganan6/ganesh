@@ -53,7 +53,7 @@ const events: EventType[] = [
     title: "Mandala Poorththi",
   },
   {
-    date: "2026-06-22",
+    date: "2026-07-22",
     title: "Mandala Poorththi",
   },
   {
