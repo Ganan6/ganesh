@@ -12,12 +12,12 @@ export default function Events() {
           date: "29th June 2026",
           image: "/events/uce2.png"
         },
-        /*{
+        {
           title: "Special Homams",
           date: "1st - 6th June 2026",
           image: "/events/uce3.png"
         },
-        {
+        /*{
           title: "Deepa Pooja",
           date: "3rd June 2026",
           image: "/events/uce4.png"

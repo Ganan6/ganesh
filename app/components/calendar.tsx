@@ -49,6 +49,14 @@ const events: EventType[] = [
     title: "Sathya Narayana Pooja",
   },
   {
+    date: "2026-07-21",
+    title: "Mandala Poorththi",
+  },
+  {
+    date: "2026-06-22",
+    title: "Mandala Poorththi",
+  },
+  {
     date: "2026-07-23",
     title: "Shanthi - Day before Grand Festival",
   },
