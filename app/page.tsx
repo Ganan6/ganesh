@@ -31,7 +31,7 @@ export default function Page() {
         <div className="flex flex-col items-center justify-center flex-1 text-center p-4 md:p-16">
           <h1 className="text-4xl font-bold mb-4 bg-black/60 p-2 rounded-xl opacity-0 animate-[fadeInUp_1s_ease-out_forwards]"><i className="fa fa-quote-right fa-flip-horizontal"></i>Harmony, Devotion, Divinity<i className="fa fa-quote-right"></i></h1>
           <p className="text-xl mb-6 bg-black/60 p-2 rounded-xl font-semibold opacity-0 animate-[fadeInUp_1s_ease-out_0.5s_forwards]">May his divine wisdom lead you on the path to success.</p>
-          <p className="text-xl mb-6 bg-black/60 p-2 rounded-xl opacity-0 animate-[fadeInUp_1s_ease-out_0.5s_forwards]">Opening time: 6pm - 8pm daily.<br />Hours might differ during special days. Check events page or Call us.</p>
+          <p className="text-xl mb-6 bg-black/60 p-2 rounded-xl opacity-0 animate-[fadeInUp_1s_ease-out_0.5s_forwards]">Opening time: 6pm - 8pm daily.<br />Hours might differ during special days. Check <a href="/events" className="text-yellow-300 hover:underline">events</a> page.</p>
         </div>
       </section>
 
