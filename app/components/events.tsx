@@ -13,7 +13,7 @@ export default function Events() {
           image: "/events/uce2.png"
         },
         {
-          title: "Special Homams",
+          title: "Mandala Poorththi",
           date: "1st - 6th June 2026",
           image: "/events/uce3.png"
         },
