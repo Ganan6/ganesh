@@ -17,17 +17,17 @@ export default function Events() {
           date: "21st - 22th July 2026",
           image: "/events/uce3.png"
         },
-        /*{
-          title: "Deepa Pooja",
-          date: "3rd June 2026",
-          image: "/events/uce4.png"
+        {
+          title: "Mahotsavam 2026",
+          date: "23rd July - 4th Aug",
+          image: "/events/uce5.png"
         },
         {
-          title: "Oil Annointing",
-          date: "4th, 5th & 6th April 2026",
-          image: "/events/uce5.png"
+          title: "Grand Festival 2026",
+          date: "23rd July - 4th Aug",
+          image: "/events/uce4.png"
         }
-        */
+        
     ];
     
     const [current, setCurrent] = React.useState(0);

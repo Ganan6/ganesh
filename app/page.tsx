@@ -14,11 +14,32 @@ export default function Page() {
 
       {/* Header */}
       <header className="bg-gray-300 text-black py-1 px-6">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center">
+            <i className="fas fa-location-dot text-yellow-800 mr-2"></i>
 
-        <div className="flex items-center w-full">
-          <i className="fas fa-location-dot text-yellow-800 mr-2"></i>
-          <a href="https://maps.app.goo.gl/1EQvfTPhtXeBAQFw8" target="_blank" className="text-sm md:text-lg font-bold hover:text-blue-400 transition delay-150 ease-in-out">Pandy Road, Aberkenfig, Bridgend.</a>
-          <a href="https://www.facebook.com/profile.php?id=100069003124125" target="_blank" className="btn text-sm md:text-lg ml-auto bg-blue-400 p-2 rounded-lg hover:bg-yellow-500 transition ease-in-out"><i className="fab fa-facebook-f text-white text-sm md:text-lg"></i></a>
+            <a
+              href="https://maps.app.goo.gl/1EQvfTPhtXeBAQFw8"
+              target="_blank"
+              className="text-sm md:text-lg font-bold hover:text-blue-400 transition"
+            >
+              Pandy Road, Aberkenfig, Bridgend.
+            </a>
+          </div>
+
+          <div className="flex items-center gap-2">
+            <a href="https://www.facebook.com/profile.php?id=100069003124125" target="_blank" className="bg-blue-500 p-2 rounded-lg hover:bg-yellow-500">
+              <i className="fab fa-facebook-f text-white"></i>
+            </a>
+
+            <a href="https://youtube.com/@srikalpagavinayakartemple5359?si=zuH3rgdPgPx5dBJU" target="_blank" className="bg-red-600 p-2 rounded-lg hover:bg-yellow-500">
+              <i className="fab fa-youtube text-white"></i>
+            </a>
+
+            <a href="https://www.instagram.com/srikalpagavinayakar?igsh=MWh3dmxnM29jY2czNQ==" target="_blank" className="bg-black p-2 rounded-lg hover:bg-yellow-500">
+              <i className="fab fa-instagram text-white"></i>
+            </a>
+          </div>
         </div>
       </header>
 
