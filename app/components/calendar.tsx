@@ -36,7 +36,7 @@ const events: EventType[] = [
 ];
 
 export default function Calendar() {
-  const [currentDate, setCurrentDate] = useState(new Date(2026, 5, 1));
+  const [currentDate, setCurrentDate] = useState(() => new Date());
 
   const year = currentDate.getFullYear();
   const month = currentDate.getMonth();

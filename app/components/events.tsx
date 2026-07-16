@@ -23,6 +23,11 @@ export default function Events() {
           image: "/events/uce5.png"
         },
         {
+          title: "Mahotsavam Special Days",
+          date: "23rd July - 4th Aug",
+          image: "/events/uce6.png"
+        },
+        {
           title: "Grand Festival 2026",
           date: "23rd July - 4th Aug",
           image: "/events/uce4.png"
