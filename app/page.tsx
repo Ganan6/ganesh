@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Footer from "./components/footer";
 import Nav from "./components/nav";
 import Events from "./components/events";
+import TempleDeities from "./components/templeDeities";
 
 export default function Page() {
   const [count, setCount] = useState(0);
@@ -58,7 +59,7 @@ export default function Page() {
       </section>
 
       {/* Annual Grand Festival 2026 */}
-      <section className="mx-4 my-6 rounded-2xl overflow-hidden bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-100 shadow-2xl">
+      <section className="mx-4 my-6 rounded-2xl overflow-hidden bg-linear-to-br from-amber-50 via-yellow-50 to-orange-100 shadow-2xl">
         <div className="grid lg:grid-cols-2 gap-8 items-center p-6 md:p-10">
 
           {/* Festival Poster */}
@@ -138,8 +139,10 @@ export default function Page() {
         </div>
       </section>
 
+      <TempleDeities/>
+
       {/* Donation section */}
-      <section className=" bg-gray-800 text-white py-12 px-6 md:px-16 m-4 rounded-lg">
+      <section className=" bg-gray-800 text-white py-8 px-4 m-4 rounded-lg">
         <div className="max-w-6xl mx-auto">
 
           {/* Heading */}
