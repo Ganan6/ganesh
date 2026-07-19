@@ -14,7 +14,7 @@ export default function Events() {
         },
         {
           title: "Mandala Poorththi",
-          date: "21st - 22th July 2026",
+          date: "20st - 21th July 2026",
           image: "/events/uce3.png"
         },
         {
