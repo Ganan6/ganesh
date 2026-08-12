@@ -33,6 +33,9 @@ const events: EventType[] = [
   { date: "2026-08-02", title: "Theertha Utsavam" },
   { date: "2026-08-03", title: "Thirukalyanam\nHoly Wedding" },
   { date: "2026-08-04", title: "Bhairavar Festival" },
+  { date: "2026-08-13", title: "Aadi Amavasa" },
+  { date: "2026-08-14", title: "Aadi Pooram" },
+  { date: "2026-08-21", title: "Varalakshmi Viratham" },
 ];
 
 export default function Calendar() {
