@@ -36,6 +36,27 @@ const events: EventType[] = [
   { date: "2026-08-13", title: "Aadi Amavasa" },
   { date: "2026-08-14", title: "Aadi Pooram" },
   { date: "2026-08-21", title: "Varalakshmi Viratham" },
+  { date: "2026-09-19", title: "1st Purattasi Sani" },
+  { date: "2026-09-26", title: "2nd Purattasi Sani" },
+  { date: "2026-09-27", title: "Mahalaya Paksha Begins" },
+  { date: "2026-10-03", title: "3rd Purattasi Sani" },
+  { date: "2026-10-10", title: "4th Purattasi Sani & Mahalaya Amavasai" },
+  { date: "2026-10-11", title: "Navaratri Begins" },
+  { date: "2026-10-19", title: "Saraswathi Pooja" },
+  { date: "2026-10-20", title: "Vijayadasami" },
+  { date: "2026-10-20", title: "Kedara Gowri Viratham Begins" },
+  { date: "2026-10-25", title: "Aippasi Pournami & Annabishekam" },
+  { date: "2026-11-08", title: "Deepavali" },
+  { date: "2026-11-08", title: "Kedara Gowri Viratham Ends" },
+  { date: "2026-11-09", title: "Kandha Sasti Viratham Begins" },
+  { date: "2026-11-15", title: "Kandha Sasti Soorasamharam" },
+  { date: "2026-11-16", title: "Paranai & Thirukalyanam" },
+  { date: "2026-11-16", title: "Ayyappa Mandala Pooja Begins" },
+  { date: "2026-11-25", title: "Vinayagar Viratham Begins" },
+  { date: "2026-12-14", title: "Gajamuka Samharam" },
+  { date: "2026-12-15", title: "Vinayagar Sashti" },
+  { date: "2026-12-20", title: "Vaikunta Ekadasi" },
+  { date: "2026-12-24", title: "Arudra Darisanam" }
 ];
 
 export default function Calendar() {
