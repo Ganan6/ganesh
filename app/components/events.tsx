@@ -3,21 +3,30 @@ import React from "react";
 export default function Events() {
     const events = [
         {
-          title: "Aadi Amavasai",
-          date: "13th August 2026",
+          title: "Krishna Jenmashtami",
+          date: "3rd September 2026",
           image: "/events/uce1.png"
         },
         {
-          title: "Aadi Pooram",
-          date: "14th August 2026",
+          title: "Vinayagar Chaturthi",
+          date: "14th September 2026",
           image: "/events/uce2.png"
         },
         {
-          title: "Varalakshmi Viratham",
-          date: "21st August 2026",
+          title: "Purattasi Sani",
+          date: "19th September 2026",
           image: "/events/uce3.png"
         },
-        
+        {
+          title: "Diwali",
+          date: "11th November 2026",
+          image: "/events/uce5.png"
+        },
+        {
+          title: "Ketharagowri Viratham",
+          date: "11th November 2026",
+          image: "/events/uce4.png"
+        }
     ];
     
     const [current, setCurrent] = React.useState(0);
