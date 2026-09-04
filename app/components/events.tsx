@@ -28,8 +28,8 @@ export default function Events() {
           image: "/events/uce4.png"
         },
         {
-          title: "Navarathri",
-          date: "11th November 2026",
+          title: "Navarathri & Vijayadasami",
+          date: "11-20 October 2026",
           image: "/events/uce6.png"
         }
     ];
