@@ -26,6 +26,11 @@ export default function Events() {
           title: "Ketharagowri Viratham",
           date: "11th November 2026",
           image: "/events/uce4.png"
+        },
+        {
+          title: "Navarathri",
+          date: "11th November 2026",
+          image: "/events/uce6.png"
         }
     ];
     

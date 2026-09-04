@@ -11,7 +11,8 @@ export default function ContactForm() {
     setLoading(true);
     setResult("");
 
-    const formData = new FormData(event.currentTarget);
+    const form = event.currentTarget;
+    const formData = new FormData(form);
     const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_KEY;
 
     if (!accessKey) {
@@ -32,11 +33,11 @@ export default function ContactForm() {
 
       if (data.success) {
         setResult("✅ Message sent successfully!");
-        (event.currentTarget as HTMLFormElement).reset();
+        form.reset();
       } else {
         setResult("❌ Something went wrong. Please try again.");
       }
-    } catch (error) {
+    } catch {
       setResult("❌ Network error. Try again later.");
     } finally {
       setLoading(false);
