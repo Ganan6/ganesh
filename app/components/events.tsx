@@ -31,7 +31,17 @@ export default function Events() {
           title: "Navarathri & Vijayadasami",
           date: "11-20 October 2026",
           image: "/events/uce6.png"
-        }
+        },
+        {
+          title: "Mahalaya Paksham Starts",
+          date: "27 September 2026",
+          image: "/events/uce7.png"
+        },
+        {
+          title: "Kanthasashti Viratham",
+          date: "9-15 November 2026",
+          image: "/events/uce8.png"
+        },
     ];
     
     const [current, setCurrent] = React.useState(0);
