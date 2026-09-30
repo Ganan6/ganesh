@@ -18,14 +18,9 @@ export default function Events() {
           image: "/events/uce3.png"
         },
         {
-          title: "Diwali",
-          date: "11th November 2026",
-          image: "/events/uce5.png"
-        },
-        {
-          title: "Ketharagowri Viratham",
-          date: "11th November 2026",
-          image: "/events/uce4.png"
+          title: "Mahalaya Paksham Starts",
+          date: "27 September 2026",
+          image: "/events/uce7.png"
         },
         {
           title: "Navarathri & Vijayadasami",
@@ -33,9 +28,19 @@ export default function Events() {
           image: "/events/uce6.png"
         },
         {
-          title: "Mahalaya Paksham Starts",
-          date: "27 September 2026",
-          image: "/events/uce7.png"
+          title: "Vijayadasami",
+          date: "20 October 2026",
+          image: "/events/uce9.png"
+        },
+        {
+          title: "Diwali",
+          date: "08th November 2026",
+          image: "/events/uce5.png"
+        },
+        {
+          title: "Ketharagowri Viratha Poorththi",
+          date: "08th November 2026",
+          image: "/events/uce4.png"
         },
         {
           title: "Kanthasashti Viratham",
