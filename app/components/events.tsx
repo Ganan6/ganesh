@@ -3,21 +3,6 @@ import React from "react";
 export default function Events() {
     const events = [
         {
-          title: "Krishna Jenmashtami",
-          date: "3rd September 2026",
-          image: "/events/uce1.png"
-        },
-        {
-          title: "Vinayagar Chaturthi",
-          date: "14th September 2026",
-          image: "/events/uce2.png"
-        },
-        {
-          title: "Purattasi Sani",
-          date: "19th September 2026",
-          image: "/events/uce3.png"
-        },
-        {
           title: "Mahalaya Paksham Starts",
           date: "27 September 2026",
           image: "/events/uce7.png"
@@ -71,13 +56,29 @@ export default function Events() {
         setCurrent(index);
     };
 
-    React.useEffect(() => {
-    const interval = setInterval(() => {
-        const next = (current + 1) % events.length;
-        scrollToIndex(next);
-    }, 4000);
-    return () => clearInterval(interval);
-    }, [current]);
+    // Keep the dots in sync when the user swipes (mobile) or scrolls (desktop):
+    // pick whichever card sits closest to the centre of the viewport.
+    const handleScroll = () => {
+        const container = scrollRef.current;
+        if (!container) return;
+
+        const containerCentre =
+            container.getBoundingClientRect().left + container.offsetWidth / 2;
+
+        let nearest = 0;
+        let smallest = Infinity;
+
+        Array.from(container.children).forEach((child, index) => {
+            const rect = (child as HTMLElement).getBoundingClientRect();
+            const distance = Math.abs(rect.left + rect.width / 2 - containerCentre);
+            if (distance < smallest) {
+                smallest = distance;
+                nearest = index;
+            }
+        });
+
+        setCurrent(nearest);
+    };
 
     return (
         <div className="flex flex-col items-center py-8 px-4">
@@ -100,16 +101,13 @@ export default function Events() {
                 {/* Carousel */}
                 <div
                     ref={scrollRef}
+                    onScroll={handleScroll}
                     className="flex w-full overflow-x-auto snap-x snap-mandatory scroll-smooth space-x-6 px-6 md:px-16 pb-8 no-scrollbar"
                 >
                     {events.map((event, index) => (
                     <div
                         key={index}
-                        className={`snap-center shrink-0 w-80 rounded-2xl overflow-hidden transition-all duration-500 ${
-                        current === index
-                            ? "scale-100 opacity-100"
-                            : "scale-90 opacity-80"
-                        } bg-white shadow-xl`}
+                        className="snap-center shrink-0 w-80 rounded-2xl overflow-hidden opacity-100 bg-white shadow-xl"
                     >
                         <img
                         src={event.image}
