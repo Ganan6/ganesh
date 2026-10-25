@@ -107,7 +107,23 @@ export default function Page() {
               title: "Diwali",
               image: "/events/diwali.png",
               description: "The festival of lights, symbolising the victory of light over darkness and good over evil. Celebrated with lamps, prayers, sweets, and fireworks, it brings joy, prosperity, and togetherness among families and communities."
+            },
+            {
+              title: "Kanthasashti",
+              image: "/events/kanthashasti.jpg",
+              description: "A Hindu fasting observance dedicated to Lord Murugan, traditionally observed for six days during the Tamil month of Aippasi. Devotees pray for courage, protection, good health and the removal of obstacles, commemorating Lord Murugan’s victory over the demon Soorapadman."
+            },
+            {
+              title: "Sathyanarayana Pooja",
+              image: "/events/satyanarayana.jpg",
+              description: "A devotional worship dedicated to Lord Vishnu in his form as Sathyanarayana. Families perform the puja, listen to the sacred story and offer prasadam to express gratitude, seek blessings for prosperity and peace, and celebrate important milestones or auspicious occasions."
+            },
+            {
+              title: "Ketharagowri Vrata",
+              image: "/events/ketharagowri.jpeg",
+              description: "A Hindu religious observance dedicated to Goddess Parvati and Lord Shiva. Devotees traditionally observe fasting and perform puja seeking marital harmony, family well-being and divine blessings. It is especially associated with Goddess Parvati’s devotion to Lord Shiva and is observed during the Tamil month of Aippasi."
             }
+
           ].map((event, index) => (
             <FlipCard
               key={index}

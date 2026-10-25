@@ -3,21 +3,6 @@ import React from "react";
 export default function Events() {
     const events = [
         {
-          title: "Mahalaya Paksham Starts",
-          date: "27 September 2026",
-          image: "/events/uce7.png"
-        },
-        {
-          title: "Navarathri & Vijayadasami",
-          date: "11-20 October 2026",
-          image: "/events/uce6.png"
-        },
-        {
-          title: "Vijayadasami",
-          date: "20 October 2026",
-          image: "/events/uce9.png"
-        },
-        {
           title: "Diwali",
           date: "08th November 2026",
           image: "/events/uce5.png"
